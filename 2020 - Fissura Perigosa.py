@@ -1,4 +1,5 @@
 # 23/08/2021
+# Ainda não aceita
 
 # N = Tamanho da Matriz
 # F = Força da Erupção
