@@ -1,5 +1,5 @@
 # 23/08/2021
-# Ainda não aceita
+# Erro na submissão
 
 # N = Tamanho da Matriz
 # F = Força da Erupção
@@ -31,25 +31,25 @@ if int(area[0][0]) <= F:
     while i < N:
         j = 0
         while j < N:
-            if i != 0: # Senão for a linha de cima
+            if i != 0:  # Senão for a linha de cima
                 if int(area[i][j] == "*"):
                     # Verificando valor acima
                     if area[i - 1][j] != "*":
                         if int(area[i - 1][j]) <= F:
                             area[i - 1][j] = "*"
-            if i != N - 1: # Se não for a última linha
+            if i != N - 1:  # Se não for a última linha
                 if int(area[i][j] == "*"):
                     # Verificando valor abaixo
                     if area[i + 1][j] != "*":
                         if int(area[i + 1][j]) <= F:
                             area[i + 1][j] = "*"
-            if j != N - 1: # Se não for o último valor da linha
+            if j != N - 1:  # Se não for o último valor da linha
                 if int(area[i][j] == "*"):
                     # Verificando valor da direita
                     if area[i][j + 1] != "*":
                         if int(area[i][j + 1]) <= F:
                             area[i][j + 1] = "*"
-            if j != 0: # Se não for o primeiro valor da linha
+            if j != 0:  # Se não for o primeiro valor da linha
                 if int(area[i][j] == "*"):
                     # Verificando valor da esquerda
                     if area[i][j - 1] != "*":
